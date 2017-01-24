@@ -1,0 +1,5 @@
+{%- from "logstash/map.jinja" import logstash with context %}
+# This file is managed with SaltStack - please make your changes in git
+#   and not locally on this server. Changes will be overwritten and you'll
+#   make everybody cry. Thanks.
+{{ logstash.config.pipeline_conf }}
