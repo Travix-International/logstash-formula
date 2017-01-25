@@ -9,4 +9,4 @@ logstash_pkg:
     - name: {{ logstash.pkg }}
     - require:
       - pkgrepo: logstash_repo
-      - pkg: logstash_java_pkg
+      - pkg: logstash_jdk_pkg
