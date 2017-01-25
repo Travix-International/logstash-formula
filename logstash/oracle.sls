@@ -1,3 +1,6 @@
+# vim: ft=sls
+# How to install oracle jdk
+{%- from "logstash/map.jinja" import logstash with context %}
 {# TODO: Add logic to install the most current JCE policy JARs #}
 logstash_jdk_repo:
   pkgrepo.managed:
