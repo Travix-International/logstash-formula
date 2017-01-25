@@ -1,6 +1,5 @@
 {# TODO: Add logic to install the most current JCE policy JARs #}
 logstash_jdk_repo:
-{% if grains['os'] == 'Ubuntu' %}
   pkgrepo.managed:
     - ppa: webupd8team/java
 
