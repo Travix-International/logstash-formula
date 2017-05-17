@@ -10,6 +10,7 @@ logstash:
   filename_pipeline_conf: /etc/logstash/conf.d/pipeline.conf
   filename_logstash_yml: /etc/logstash/logstash.yml
   filename_jvm_options: /etc/logstash/jvm.options
+  filename_defaults: /etc/default/logstash
   filename_repo: /etc/apt/sources.list.d/elastic.list
   config:
     pipeline_conf: |

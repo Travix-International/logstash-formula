@@ -11,6 +11,15 @@ logstash_pipeline_conf:
     - mode: 0644
     - template: jinja
 
+logstash_defaults_conf:
+  file.managed:
+    - name: {{ logstash.filename_defaults }}
+    - source: salt://logstash/files/defaults.jinja
+    - user: root
+    - group: root
+    - mode: 0644
+    - template: jinja
+
 logstash_jvm_options:
   file.managed:
     - name: {{ logstash.filename_jvm_options }}
