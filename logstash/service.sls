@@ -11,3 +11,4 @@ logstash_service:
         - file: logstash_jvm_options
         - file: logstash_logstash_yml
         - file: logstash_defaults_conf
+        - pkg: logstash_jdk_install
