@@ -5,7 +5,7 @@ logstash:
   enabled: true
   pkg: logstash
   jdk_vendor: oracle
-  openjdk_pkg: openjdk-8-jdk-jre-headless
+  openjdk_pkg: openjdk-8-jdk-headless
   oraclejdk_pkg: oracle-java8-installer
   filename_pipeline_conf: /etc/logstash/conf.d/pipeline.conf
   filename_logstash_yml: /etc/logstash/logstash.yml
