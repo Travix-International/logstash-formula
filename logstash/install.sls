@@ -10,4 +10,3 @@ logstash_pkg:
     - version: {{ logstash.version }}
     - require:
       - pkgrepo: logstash_repo
-      - pkg: logstash_jdk_pkg
