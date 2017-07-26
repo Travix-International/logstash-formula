@@ -3,7 +3,9 @@
 logstash_jdk_install:
   pkg.installed:
     - name: {{ logstash.openjdk_pkg }}
+{% if logstash.jdk_version is defined %}
     - version: {{ logstash.jdk_version }}
+{% endif %}
     - require_in:
       - pkg: {{ logstash.pkg }}
 logstash_openjdk_java_alternatives:
